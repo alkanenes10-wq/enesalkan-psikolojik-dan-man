@@ -44,7 +44,8 @@ p { margin: 0 0 1em; }
 /* Üst bar */
 .ust { padding: 18px 0; }
 .ust .kap { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
-.marka { text-decoration: none; color: var(--metin); font-weight: 700; font-size: 18px; }
+.marka { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--metin); font-weight: 700; font-size: 18px; line-height: 1.25; }
+.marka img { display: block; flex: none; }
 .marka small { display: block; font-weight: 500; font-size: 13px; color: var(--soluk); }
 .menu { display: flex; gap: 18px; font-size: 15px; }
 .menu a { text-decoration: none; color: var(--soluk); }
