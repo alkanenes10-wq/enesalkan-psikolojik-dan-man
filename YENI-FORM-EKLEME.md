@@ -1,11 +1,11 @@
 # Yeni form nasıl eklenir?
 
-Tüm formlar tek dosyada durur: `assets/formlar.js`. Başka hiçbir dosyaya dokunmanız gerekmez.
+Tüm formlar tek dosyada durur: `formlar.js`. Başka hiçbir dosyaya dokunmanız gerekmez.
 Yeni form eklediğinizde linki, ana sayfadaki kartı ve puan hesabı kendiliğinden oluşur.
 
 ## Adımlar
 
-1. `assets/formlar.js` dosyasını açın.
+1. `formlar.js` dosyasını açın.
 2. Erteleme bloğunu, başındaki `{` işaretinden sonundaki `}` işaretine kadar kopyalayın.
 3. Erteleme bloğunun kapanan `}` işaretinden sonra bir **virgül** koyun ve kopyayı yapıştırın.
 4. Aşağıdaki alanları yeni konuya göre değiştirin.
