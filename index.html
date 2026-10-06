@@ -8,100 +8,176 @@
 <link rel="icon" href="/logo.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/logo-180.png">
 <link rel="stylesheet" href="/stil.css">
+<link rel="stylesheet" href="/ana.css">
 </head>
-<body>
+<body class="ana">
 <header class="ust">
-  <div class="kap">
+  <div class="kap genis">
     <a class="marka" href="/"><img src="/logo.svg" alt="" width="40" height="40"><span>Enes Alkan<small>Psk. Danışman</small></span></a>
     <nav class="menu">
+      <a href="#konular">Konular</a>
       <a href="#formlar">Formlar</a>
       <a href="#surec">Süreç</a>
-      <a href="#veliler">Veliler için</a>
+      <a href="#hakkimda">Hakkımda</a>
+      <a href="#sss">Sorular</a>
     </nav>
+    <a class="dugme kucuk d3" data-dm href="#">Ön görüşme</a>
   </div>
 </header>
 
 <main>
-  <section class="kahraman">
-    <div class="kap">
-      <h1>İrade değil, <span>yöntem.</span></h1>
-      <p>YKS'ye hazırlanan 12. sınıf ve mezun öğrenciler için BDT temelli online danışmanlık ve akademik koçluk. Erteleme, sınav kaygısı ve çalışma düzeni üzerine, kanıta dayalı yöntemlerle çalışıyoruz.</p>
-      <div class="dugmeler">
-        <a class="dugme" href="#formlar">Kendini değerlendir</a>
-        <a class="dugme ikincil" data-dm href="#">Instagram'dan yaz</a>
+  <section class="kh">
+    <div class="kap genis kh-izgara">
+      <div class="kh-sol">
+        <span class="ust-etiket">YKS · 12. sınıf ve mezun</span>
+        <h1>İrade değil, <span>yöntem.</span></h1>
+        <p class="kh-alt">Erteleme, sınav kaygısı ve çalışma düzeni için BDT temelli online danışmanlık ve akademik koçluk.</p>
+        <div class="dugmeler">
+          <a class="dugme d3" href="#formlar">Kendini değerlendir</a>
+          <a class="dugme ikincil" data-dm href="#">Instagram'dan yaz</a>
+        </div>
+        <div class="sayilar">
+          <div><b>15 dk</b><span>Ücretsiz ön görüşme</span></div>
+          <div><b>3 dk</b><span>Form süresi</span></div>
+          <div><b>0</b><span>Kaydedilen yanıt</span></div>
+        </div>
+      </div>
+
+      <div class="sahne" id="sahne" aria-hidden="true">
+        <div class="sahne-ic">
+          <i class="blob b1"></i><i class="blob b2"></i><i class="blob b3"></i>
+          <i class="nokta n1"></i><i class="nokta n2"></i>
+          <svg class="ok-cizgi" viewBox="0 0 90 50"><path d="M4 40c14-22 26 8 38-10s20-8 30-20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M62 8l11 2-3 11" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+
+          <div class="telefon">
+            <div class="ekran">
+              <div class="e-ust"><img src="/logo.svg" alt="" width="22" height="22"><span>Enes Alkan</span></div>
+              <small>Sınav Kaygısı · Puanın: 33 / 60</small>
+              <b>Kaygı zaman zaman performansını etkiliyor</b>
+              <div class="e-olcek"><i></i></div>
+              <div class="e-kutu"><em>Bu hafta dene</em>Nefesini yavaşlat: dört saniyede al, altı saniyede ver.</div>
+              <div class="e-bar"><span>Düşünceler</span><i style="--w:86%"></i></div>
+              <div class="e-bar"><span>Beden</span><i style="--w:36%"></i></div>
+              <div class="e-bar"><span>Sınav anı</span><i style="--w:60%"></i></div>
+              <div class="e-bar"><span>Beklenti</span><i style="--w:22%"></i></div>
+              <div class="e-dugme">Instagram'dan yaz</div>
+            </div>
+          </div>
+
+          <div class="yuzen y1">
+            <span class="ikon"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <div><b>Sonucun hazır</b><small>Yalnızca sen görürsün</small></div>
+          </div>
+          <div class="yuzen y2"><b>15 dk</b><small>Ücretsiz ön görüşme</small></div>
+          <div class="yuzen y3">
+            <small>Alanlara göre</small>
+            <div class="sutunlar"><i style="--h:82%"></i><i style="--h:40%;--c:var(--vurgu)"></i><i style="--h:62%"></i><i style="--h:28%;--c:#e3a07a"></i><i style="--h:70%;--c:var(--koyu)"></i></div>
+          </div>
+          <div class="yuzen y4">
+            <small>Bu hafta</small>
+            <div class="satir"><i></i><u></u></div>
+            <div class="satir"><i style="background:var(--vurgu)"></i><u style="width:62%"></u></div>
+            <div class="satir"><i style="background:var(--koyu)"></i><u style="width:80%"></u></div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="bolum" id="formlar">
-    <div class="kap">
-      <h2>Kendini değerlendirme formları</h2>
-      <p class="giris">Kısa formlarla nerede zorlandığını gör. Yanıtların kaydedilmez; sonuç yalnızca senin ekranında hesaplanır.</p>
+  <section class="blok" id="konular">
+    <div class="kap genis">
+      <h2 class="orta">Birlikte çalıştığımız konular</h2>
+      <div class="ozler">
+        <div class="oz"><span class="kup"><svg viewBox="0 0 24 24"><circle cx="12" cy="13" r="7.5"/><path d="M12 9v4l2.5 2M9 3h6"/></svg></span><h3>Erteleme</h3><p>Başlamayı kolaylaştıran küçük ve net adımlar.</p></div>
+        <div class="oz"><span class="kup"><svg viewBox="0 0 24 24"><path d="M3 12h4l2-6 4 12 2-6h6"/></svg></span><h3>Sınav kaygısı</h3><p>Düşünce, beden ve sınav anı için beceriler.</p></div>
+        <div class="oz"><span class="kup"><svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="2.5"/><path d="M4 10h16M9 3v4M15 3v4"/></svg></span><h3>Çalışma düzeni</h3><p>Uygulanabilir, sana göre haftalık program.</p></div>
+        <div class="oz"><span class="kup"><svg viewBox="0 0 24 24"><path d="M7 3h10M7 21h10M8 3c0 5 8 5 8 9s-8 4-8 9M16 3c0 5-8 5-8 9s8 4 8 9"/></svg></span><h3>Zaman yönetimi</h3><p>Zamanın nereye gittiğini görmek ve yönetmek.</p></div>
+        <div class="oz"><span class="kup"><svg viewBox="0 0 24 24"><path d="M5 20V10M12 20V4M19 20v-7"/></svg></span><h3>Deneme stratejisi</h3><p>Bildiğini sınavda ortaya koyabilmek.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="blok zeminli" id="formlar">
+    <div class="kap genis">
+      <h2 class="orta">Kısa formlarla nerede zorlandığını gör</h2>
+      <p class="giris orta">Yanıtların kaydedilmez; sonuç yalnızca senin ekranında hesaplanır.</p>
       <div class="izgara" id="form-listesi"></div>
     </div>
   </section>
 
-  <section class="bolum" id="surec">
-    <div class="kap">
-      <h2>Süreç nasıl işliyor?</h2>
-      <div class="izgara">
-        <div class="kart">
-          <span class="adim-no">1</span>
-          <h3>Formu doldur</h3>
-          <p>İki dakikalık bir formla zorlandığın alanı kendin gör.</p>
-        </div>
-        <div class="kart">
-          <span class="adim-no">2</span>
-          <h3>Ücretsiz ön görüşme</h3>
-          <p>15 dakikada durumuna birlikte bakar, birlikte çalışmanın sana uygun olup olmadığını konuşuruz.</p>
-        </div>
-        <div class="kart">
-          <span class="adim-no">3</span>
-          <h3>Haftalık çalışma</h3>
-          <p>İkimiz için de uygunsa haftalık görüşmeler ve sana özel bir çalışma planıyla ilerleriz.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="bolum" id="yaklasim">
-    <div class="kap">
-      <h2>Yaklaşımım</h2>
-      <div class="izgara">
-        <div class="kart">
-          <h3>Kanıta dayalı</h3>
-          <p>Bilişsel Davranışçı Terapi temelli, işe yaradığı araştırmalarla gösterilmiş yöntemler kullanırım.</p>
-        </div>
-        <div class="kart">
-          <h3>Bağımlılık değil özerklik</h3>
-          <p>Amaç, öğrencinin kendi çalışmasını kendi yönetebilir hale gelmesi; bana ihtiyacının azalması.</p>
-        </div>
-        <div class="kart">
-          <h3>Akademik ve duygusal birlikte</h3>
-          <p>Çalışma programı ile kaygı, erteleme ve motivasyon ayrı konular değil; birlikte ele alınır.</p>
+  <section class="blok" id="surec">
+    <div class="kap genis">
+      <h2 class="orta">Üç adımda nasıl işliyor?</h2>
+      <div class="iki">
+        <ol class="adimlar">
+          <li><b>01</b><div><h3>Formu doldur</h3><p>İki üç dakikalık bir formla zorlandığın alanı kendin gör.</p></div></li>
+          <li><b>02</b><div><h3>Ücretsiz ön görüşme</h3><p>15 dakikada durumuna birlikte bakar, birlikte çalışmanın sana uygun olup olmadığını konuşuruz.</p></div></li>
+          <li><b>03</b><div><h3>Haftalık çalışma</h3><p>İkimiz için de uygunsa haftalık görüşmeler ve sana özel bir çalışma planıyla ilerleriz.</p></div></li>
+        </ol>
+        <div class="sahne kucuk" aria-hidden="true">
+          <div class="sahne-ic">
+            <i class="blob b2"></i><i class="blob b1"></i><i class="nokta n1"></i>
+            <div class="takvim">
+              <div class="t-ust"><span>Ön görüşme</span><em>15 dk</em></div>
+              <div class="gunler"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="s"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            </div>
+            <div class="balon b-sol">Sonucumu konuşmak istiyorum</div>
+            <div class="balon b-sag">GÖRÜŞME</div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="bolum" id="veliler">
-    <div class="kap">
-      <h2>Veliler için</h2>
-      <p class="giris">18 yaşından küçük öğrencilerle süreç, velinin bilgisi ve onayıyla başlar. Ön görüşmeye öğrencinizle birlikte katılabilir, sürecin nasıl ilerleyeceğini ve sizin rolünüzü doğrudan sorabilirsiniz.</p>
+  <section class="blok zeminli" id="hakkimda">
+    <div class="kap genis iki">
+      <div class="portre" aria-hidden="true">
+        <i class="halka"></i><i class="nokta n1"></i>
+        <div class="daire">
+          <img src="/enes.png" alt="" onerror="this.remove()">
+          <svg viewBox="0 0 64 64"><g fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M26 18H12v28h14M12 32h11"/><path d="M34 46l9-28 9 28"/></g><path d="M38.5 37h9" stroke="#c9783a" stroke-width="5" stroke-linecap="round"/></svg>
+        </div>
+        <div class="yuzen y5"><b>BDT temelli</b><small>Kanıta dayalı yöntem</small></div>
+        <i class="top"></i>
+      </div>
+      <div>
+        <h2>Yönteme dayalı destek</h2>
+        <p class="giris">Psikolojik Danışmanlık ve Rehberlik mezunuyum. YKS'ye hazırlanan öğrencilerle Bilişsel Davranışçı Terapi temelli, kanıta dayalı yöntemlerle çalışıyorum.</p>
+        <ul class="tikler">
+          <li><b>Kanıta dayalı yöntem</b>İşe yaradığı araştırmalarla gösterilmiş teknikler.</li>
+          <li><b>Bağımlılık değil özerklik</b>Hedef, öğrencinin kendi planını kendisinin yürütmesi.</li>
+          <li><b>Akademik ve duygusal birlikte</b>Program, kaygı ve erteleme birlikte ele alınır.</li>
+          <li><b>Veliyle açık iletişim</b>18 yaş altında süreç velinin bilgisi ve onayıyla yürür.</li>
+        </ul>
+      </div>
     </div>
   </section>
 
-  <section class="bolum cagri">
-    <div class="kap">
+  <section class="blok" id="sss">
+    <div class="kap genis">
+      <h2 class="orta">Sık sorulan sorular</h2>
+      <div class="sss">
+        <details><summary>Formdaki yanıtlarım kaydediliyor mu?</summary><p>Hayır. Yanıtların ve puanın yalnızca kendi cihazında hesaplanır, hiçbir yere gönderilmez.</p></details>
+        <details open><summary>Ön görüşme ücretli mi?</summary><p>Hayır. 15 dakikalık ön görüşme ücretsizdir; birlikte çalışmanın uygun olup olmadığını konuşmak içindir.</p></details>
+        <details><summary>Görüşmeler nasıl yapılıyor?</summary><p>Görüşmeler online yapılır. Telefon ya da bilgisayardan, bir linke dokunarak katılabilirsin.</p></details>
+        <details><summary>Velimin katılması gerekiyor mu?</summary><p>18 yaşından küçüksen evet. Ön görüşme ve sonraki süreç velinin bilgisi ve onayıyla yürütülür.</p></details>
+        <details><summary>Formlar psikolojik test mi?</summary><p>Hayır. Formlar tanı koymaz; kendi durumunu fark etmen için hazırlanmış kendini değerlendirme araçlarıdır.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="kap genis" id="veliler">
+    <div class="bant">
+      <i class="blob"></i><i class="nokta"></i>
       <h2>Tanışalım</h2>
-      <p>15 dakikalık ücretsiz ön görüşme için Instagram'dan <span class="kelime" data-kelime>GÖRÜŞME</span> yazmanız yeterli.</p>
-      <a class="dugme" data-dm href="#">Instagram'dan yaz</a>
+      <p>15 dakikalık ücretsiz ön görüşme için Instagram'dan <span class="kelime" data-kelime>GÖRÜŞME</span> yazmanız yeterli. 18 yaş altındaki öğrenciler veliyle birlikte katılır.</p>
+      <a class="dugme acik" data-dm href="#">Instagram'dan yaz</a>
     </div>
   </section>
 </main>
 
 <footer class="alt">
-  <div class="kap">
+  <div class="kap genis">
     <span data-yil></span> Enes Alkan · <a data-ig href="#"></a> · <a href="/bilgilendirme">Bilgilendirme ve gizlilik</a>
   </div>
 </footer>

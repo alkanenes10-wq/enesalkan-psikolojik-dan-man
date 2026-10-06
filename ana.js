@@ -30,3 +30,21 @@
     liste.appendChild(a);
   });
 })();
+
+/* 3B sahne: fare hareketine göre hafif eğim (yalnızca fare olan cihazlarda) */
+(function () {
+  if (!window.matchMedia || !matchMedia("(pointer: fine)").matches) return;
+  if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  document.querySelectorAll(".sahne").forEach(function (s) {
+    var ic = s.querySelector(".sahne-ic");
+    s.addEventListener("mousemove", function (e) {
+      var r = s.getBoundingClientRect();
+      var x = (e.clientX - r.left) / r.width - .5, y = (e.clientY - r.top) / r.height - .5;
+      ic.style.setProperty("--ry", (x * 12).toFixed(2) + "deg");
+      ic.style.setProperty("--rx", (-y * 10).toFixed(2) + "deg");
+    });
+    s.addEventListener("mouseleave", function () {
+      ic.style.setProperty("--ry", "0deg"); ic.style.setProperty("--rx", "0deg");
+    });
+  });
+})();
