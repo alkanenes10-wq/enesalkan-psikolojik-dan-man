@@ -8,7 +8,7 @@ window.SITE = {
   ad: "Enes Alkan",
   unvan: "Psk. Danışman",
   slogan: "İrade değil, yöntem.",
-  instagram: "enesalkan.pdr",   // başında @ olmadan
+  instagram: "enesalkan.pskdan",   // başında @ olmadan
   dmKelimesi: "GÖRÜŞME"
 };
 
