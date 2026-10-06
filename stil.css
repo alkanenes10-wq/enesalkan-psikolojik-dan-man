@@ -138,6 +138,14 @@ a.kart .git { display: inline-block; margin-top: 14px; color: var(--ana); font-w
 .olcek-uc { display: flex; justify-content: space-between; font-size: 13px; color: var(--soluk); margin-bottom: 20px; }
 .oneri { border-left: 4px solid var(--vurgu); background: var(--zemin); border-radius: 0 12px 12px 0; padding: 14px 16px; margin: 18px 0; }
 .oneri strong { display: block; font-size: 14px; color: var(--vurgu); margin-bottom: 4px; }
+.alanlar { border-top: 1px solid var(--cizgi); margin-top: 22px; padding-top: 20px; }
+.alanlar h2 { font-size: 18px; margin-bottom: 14px; }
+.alan { display: grid; grid-template-columns: 150px 1fr; align-items: center; gap: 12px; margin-bottom: 10px; font-size: 15px; }
+.alan-cubuk { height: 10px; background: var(--cizgi); border-radius: 999px; overflow: hidden; }
+.alan-cubuk > i { display: block; height: 100%; min-width: 6px; background: var(--ana); border-radius: 999px; }
+.alan-not { font-size: 16px; color: var(--soluk); margin: 16px 0 0; }
+.alan-not strong { color: var(--metin); }
+@media (max-width: 420px) { .alan { grid-template-columns: 120px 1fr; } }
 .davet { border-top: 1px solid var(--cizgi); margin-top: 24px; padding-top: 22px; }
 .davet h2 { font-size: 21px; }
 .davet p { color: var(--soluk); font-size: 16px; }

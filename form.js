@@ -133,6 +133,37 @@
     o.appendChild(el("span", null, s.oneri));
     p.appendChild(o);
 
+    if (form.alanlar && form.alanlar.length) {
+      var n = form.secenekler.length;
+      var ort = form.alanlar.map(function (al) {
+        var t = 0, k = 0;
+        form.maddeler.forEach(function (m, i) {
+          if (m.alan === al.kod) { t += m.ters ? (n + 1 - yanitlar[i]) : yanitlar[i]; k++; }
+        });
+        return { alan: al, deger: k ? t / k : 0 };
+      });
+      var kutu = el("div", "alanlar");
+      kutu.appendChild(el("h2", null, "Alanlara göre"));
+      ort.forEach(function (o) {
+        var satir = el("div", "alan");
+        satir.appendChild(el("span", "alan-ad", o.alan.ad));
+        var cb = el("div", "alan-cubuk");
+        var ci = el("i");
+        ci.style.width = Math.round(((o.deger - 1) / (n - 1)) * 100) + "%";
+        cb.appendChild(ci);
+        satir.appendChild(cb);
+        kutu.appendChild(satir);
+      });
+      var enYuksek = ort.slice().sort(function (x, y) { return y.deger - x.deger; })[0];
+      if (enYuksek.deger >= 3 && enYuksek.alan.not) {
+        var an = el("p", "alan-not");
+        an.appendChild(el("strong", null, enYuksek.alan.ad + ": "));
+        an.appendChild(document.createTextNode(enYuksek.alan.not));
+        kutu.appendChild(an);
+      }
+      p.appendChild(kutu);
+    }
+
     var d = el("div", "davet");
     d.appendChild(el("h2", null, "Sonucunu birlikte konuşalım mı?"));
     var dp = el("p");

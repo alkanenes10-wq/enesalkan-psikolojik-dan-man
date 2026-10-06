@@ -6,8 +6,8 @@ Yeni form eklediğinizde linki, ana sayfadaki kartı ve puan hesabı kendiliğin
 ## Adımlar
 
 1. `formlar.js` dosyasını açın.
-2. Erteleme bloğunu, başındaki `{` işaretinden sonundaki `}` işaretine kadar kopyalayın.
-3. Erteleme bloğunun kapanan `}` işaretinden sonra bir **virgül** koyun ve kopyayı yapıştırın.
+2. Mevcut form bloklarından birini, başındaki `{` işaretinden sonundaki `}` işaretine kadar kopyalayın.
+3. Son form bloğunun kapanan `}` işaretinden sonra bir **virgül** koyun ve kopyayı yapıştırın.
 4. Aşağıdaki alanları yeni konuya göre değiştirin.
 5. Dosyayı kaydedip GitHub'a gönderin; Vercel siteyi kendiliğinden günceller.
 
@@ -33,6 +33,16 @@ Yeni form eklediğinizde linki, ana sayfadaki kartı ve puan hesabı kendiliğin
 
 10 maddelik form için: 10-23, 24-37, 38-50.
 8 maddelik form için: 8-18, 19-29, 30-40.
+
+## Alt alanlar (isteğe bağlı)
+
+Sınav kaygısı formundaki gibi, sonucu alanlara bölerek göstermek isterseniz forma bir `alanlar`
+listesi ekleyin ve her maddeye o listedeki kodlardan birini `alan` olarak yazın.
+Sonuç ekranında her alan için bir çubuk çıkar; en yüksek alanın `not` metni gösterilir.
+`alanlar` yazmazsanız form yalnızca toplam puanla çalışır (erteleme formu böyledir).
+
+Yanıt seçenekleri için `SECENEKLER_UYUM` (bana uyuyor/uymuyor) ya da `SECENEKLER_SIKLIK`
+(hiçbir zaman/her zaman) kullanabilirsiniz.
 
 ## Ters puanlanan madde
 
