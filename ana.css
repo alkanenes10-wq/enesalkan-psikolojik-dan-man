@@ -31,7 +31,7 @@ body.ana { background: var(--kart); overflow-x: hidden; }
 .blob { position: absolute; display: block; }
 .b1 { width: 54%; height: 60%; left: 20%; top: 2%; background: var(--pembe); border-radius: 58% 42% 52% 48% / 46% 58% 42% 54%; transform: translateZ(-80px) rotate(-8deg); }
 .b2 { width: 46%; height: 56%; right: 3%; top: 16%; background: var(--ana); border-radius: 46% 54% 44% 56% / 58% 44% 56% 42%; transform: translateZ(-60px) rotate(10deg); }
-.b3 { width: 52%; height: 50%; left: 26%; bottom: 3%; background: var(--vurgu); border-radius: 52% 48% 60% 40% / 44% 52% 48% 56%; transform: translateZ(-40px) rotate(4deg); }
+.b3 { width: 62%; height: 44%; left: 20%; bottom: 0; background: var(--vurgu); border-radius: 52% 48% 60% 40% / 44% 52% 48% 56%; transform: translateZ(-40px) rotate(4deg); }
 .nokta { position: absolute; display: block; width: 120px; height: 110px; background-image: radial-gradient(var(--ana) 2px, transparent 2.5px); background-size: 14px 14px; opacity: .45; }
 .n1 { left: 2%; bottom: 14%; }
 .n2 { right: 0; top: 2%; background-image: radial-gradient(var(--vurgu) 2px, transparent 2.5px); opacity: .7; width: 90px; height: 70px; }
@@ -70,6 +70,14 @@ body.ana { background: var(--kart); overflow-x: hidden; }
 .satir { display: flex; align-items: center; gap: 9px; margin-top: 9px; }
 .satir i { width: 16px; height: 16px; border-radius: 50%; background: var(--ana); flex: none; }
 .satir u { display: block; height: 6px; width: 74%; background: var(--cizgi); border-radius: 9px; }
+
+.kisi { position: absolute; left: 50%; bottom: 0; height: 97%; width: auto; transform: translateX(-50%) translateZ(40px);
+  -webkit-mask-image: linear-gradient(#000 86%, transparent 99%); mask-image: linear-gradient(#000 86%, transparent 99%);
+  filter: drop-shadow(0 24px 30px rgba(10, 40, 38, .28)); pointer-events: none; }
+.sahne.formsahne { height: 540px; }
+.sahne.formsahne .b2 { width: 64%; height: 70%; left: 20%; right: auto; top: 14%; }
+.sahne.formsahne .b1 { width: 44%; height: 46%; left: 4%; top: 44%; }
+#formlar .izgara { grid-template-columns: 1fr; }
 
 /* ---- Bölümler ---- */
 .blok { padding: 58px 0; }
@@ -118,7 +126,7 @@ body.ana { background: var(--kart); overflow-x: hidden; }
 .portre .halka { position: absolute; left: 50%; top: 50%; width: 360px; height: 360px; margin: -180px; border: 1.5px solid var(--ana); border-radius: 50%; opacity: .5; }
 .portre .daire { position: absolute; left: 50%; top: 50%; width: 310px; height: 310px; margin: -155px; border-radius: 50%; background: linear-gradient(150deg, var(--ana), var(--koyu)); display: grid; place-items: center; overflow: hidden; box-shadow: 0 30px 50px rgba(16, 59, 57, .28); }
 .portre .daire svg { width: 46%; }
-.portre .daire img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: top center; }
+.portre .daire img { position: absolute; left: 50%; top: 6%; width: 118%; height: auto; transform: translateX(-50%); }
 .portre .daire img + svg { display: none; }
 .portre .n1 { left: 4%; bottom: 8%; }
 .portre .top { position: absolute; right: 16%; top: 9%; width: 26px; height: 26px; border-radius: 50%; background: var(--vurgu); box-shadow: inset -5px -5px 0 rgba(0, 0, 0, .15); }
@@ -169,6 +177,7 @@ body.ana { background: var(--kart); overflow-x: hidden; }
   .sayilar b { font-size: 27px; }
   .sayilar div { padding-right: 14px; } .sayilar div + div { padding-left: 14px; }
   .sahne.kucuk { height: 340px; }
+  .sahne.formsahne { height: 470px; }
   .takvim { width: 210px; margin: -100px 0 0 -95px; }
   .portre { height: 340px; }
   .portre .halka { width: 300px; height: 300px; margin: -150px; }
